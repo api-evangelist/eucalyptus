@@ -1,21 +1,50 @@
 aid: eucalyptus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eucalyptus.png
 name: Eucalyptus
-description: 'Eucalyptus is a company surfaced as a portfolio company of bond-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Eucalyptus (eucalyptus.health) is a global digital healthcare company founded in 2019 and
+  headquartered in Sydney, Australia, that builds and operates patient-first telehealth clinics. It runs
+  four consumer digital-health brands — Juniper (women''s weight management and menopause), Pilot (men''s
+  health, hair loss, sexual health and weight), Software (clinical-grade skincare and dermatology) and
+  Kin (reproductive, fertility and postpartum care) — across Australia, the United Kingdom, Germany, Japan
+  and Canada, pairing licensed practitioners with technology and connected-care tooling. Eucalyptus was
+  acquired by Hims & Hers Health in June 2026. This profile is a consumer-facing healthtech company: it
+  publishes no public developer API, developer portal, or OpenAPI at this time, so enrichment is limited
+  to verified corporate identity, published website properties, a responsible-disclosure program, and
+  probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/eucalyptus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bond-capital
+x-acquired-by: hims-and-hers
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthtech
+- Telehealth
+- Digital Health
+- Telemedicine
+- Weight Management
+- Women's Health
+- Men's Health
+- Dermatology
+- Reproductive Health
+- Australia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eucalyptus-domain-security.yml
 - type: Website
-  url: https://eucalyptus.vc
+  url: https://www.eucalyptus.health/
+- type: Blog
+  url: https://www.eucalyptus.health/blog
+- type: PrivacyPolicy
+  url: https://www.eucalyptus.health/privacy-policy
+- type: Support
+  url: https://www.eucalyptus.health/contact-us
+- type: Careers
+  url: https://www.eucalyptus.health/careers
+- type: Research
+  url: https://www.eucalyptus.health/research
+- type: VulnerabilityDisclosure
+  url: security/eucalyptus-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.eucalyptus.health/vulnerability-disclosure
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
